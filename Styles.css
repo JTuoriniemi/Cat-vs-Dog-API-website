@@ -8,10 +8,14 @@ p {
   padding: 0;
 }
 
+p {
+  margin: 10px;
+}
 /* Set a background color */
 body {
-  background-color: #fce4ec;
+  background-color: #fce4ec; /* Soft pastel background */
   font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -23,9 +27,11 @@ body {
     "results"
     "leaderboard"
     "footer";
-  gap: 10px;
+  gap: 20px;
+  width: 100%; /* Set the width to 100% to take up the full screen width */
+  margin: 0 auto;
   padding: 10px;
-  background-color: #ffd1dc;
+  background-color: #ffd1dc; /* Lighter pastel background */
   border-radius: 10px;
   min-height: 100vh;
 }
@@ -38,15 +44,13 @@ header {
 }
 
 h1 {
-  color: #f875aa;
-  font-size: 36px;
-  margin: 10px;
+  color: #f875aa; /* Cute pink for headings */
+  font-size: 48px;
 }
 
 h2 {
-  color: #55c9a6;
-  font-size: 20px;
-  margin: 10px;
+  color: #55c9a6; /* Soft green for subheadings */
+  font-size: 24px;
 }
 
 .about {
@@ -55,8 +59,8 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-  color: #f875aa;
+  font-size: 28px;
+  color: #f875aa; /* Cute pink for headings */
   padding: 10px;
 }
 
@@ -68,42 +72,41 @@ h3 {
 }
 
 button#nappi {
-  background-color: #be0d66;
-  color: #fff;
+  background-color: #be0d66; /* Soft green button color */
+  color: #fff; /* White text for contrast */
   border: none;
   border-radius: 5px;
-  padding: 15px 30px;
+  padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 10px 0; /* Add margin to create spacing below the button */
 }
 
 .kuvat {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 0;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0; /* Add margin to create spacing above and below the images */
 }
 
 img#kuva1,
 img#kuva2 {
-  max-width: 100%;
-  height: auto;
-  margin: 10px 0;
+  width: 300px;
+  height: 300px;
 }
 
 .results {
   grid-area: results;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 0; /* Add margin to create spacing above and below the "Results" section */
 }
 
 footer {
   grid-area: footer;
   text-align: center;
-  background-color: #ffd1dc;
+  background-color: #ffd1dc; /* Lighter pastel footer background */
   padding: 10px;
-  border-top: 2px solid #f875aa;
+  border-top: 2px solid #f875aa; /* Pink border accent */
 }
 
 /* Make the site responsive */
