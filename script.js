@@ -66,10 +66,13 @@ async function haeKuvat() {
 
   if (dogResponse.ok && catResponse.ok) {
     var dogData = await dogResponse.json();
-    var catData = catResponse.url;
+    var catData = await catResponse.blob(); // Fetch cat image as a blob
+
+    // Convert the cat image blob into a data URL
+    const catImageUrl = URL.createObjectURL(catData);
 
     document.getElementById("kuva1").setAttribute("src", dogData.message);
-    document.getElementById("kuva2").setAttribute("src", catData);
+    document.getElementById("kuva2").setAttribute("src", catImageUrl); // Set the cat image source
   } else {
     console.error("Failed to fetch images.");
   }
